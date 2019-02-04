@@ -1,0 +1,738 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rajat Tamoli</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="personal webpage Rajat Tamoli ">
+  <meta name="author" content="Rajat Tamoli">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="favicon.ico" />
+  <style type="text/css">
+  
+  .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+
+
+.image-bg-fluid-height,
+.image-bg-fixed-height,
+.image-skill {
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.image-skill {
+    background: #444 no-repeat bottom center scroll;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+}
+
+
+.image-bg-fluid-height {
+  background: url('cover.png') no-repeat center center scroll;
+    padding: 100px 0;
+}
+
+.image-bg-fixed-height {
+  background: url('cover.png') no-repeat center center scroll;
+    background-size: 100% auto;
+    width: 100%;
+    height: 100%;
+}
+
+.img-center {
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+  body{
+  	background-color: #e3e3e3;
+  }
+  
+  .navbar {
+      margin-bottom: 0;
+      background-color:black;
+      z-index: 9999;
+      border: 0;
+      font-size: 16px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: black !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+
+
+  .container{
+    width: 90%;
+  }
+
+  .polaroid {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+} 
+
+.polaroid1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: left;
+  padding: 30px;
+  font-size: 20px;
+  font-style: bold;
+} 
+
+.polaroid2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  font-size: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+} 
+  #p1{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 35px;
+  }
+
+  #info{
+    //line-height: 10px;
+    opacity: 0.9;
+    color: black;
+  }
+  #info2{
+    line-height: 10px;
+    opacity: 0.6;
+  }
+  #info1{
+    line-height: 13px;
+    opacity: 0.6;
+    font-size: 18px;
+  }
+
+  .btn{
+    color: white;
+    background-color: #280e05;
+    //padding: 5px 30px;
+    margin: 40px;
+  }
+
+  table#t01 {
+            border-collapse: collapse;
+            width: 100%;
+            
+        }
+
+            table#t01 td {
+            
+            padding: 2.2%;
+            text-align: center;
+            font-family:"sans-serif";
+            font-size: 22px;
+            color: white;
+            //border-bottom: 1px solid #111;
+        }
+
+          #para2 {
+            margin-top: 7%;
+            margin-bottom: 3%;
+            padding-top: 0%;
+            font-size:35px;
+            font-style:italic;
+            font-family: "cambria";
+            color: black;
+            opacity: 0.6;
+            text-align: center;
+            letter-spacing: 1px;
+          }
+        
+
+        .div1 {
+            margin-top: 0%;
+            margin-bottom: 3%;
+            padding-top: 0%;
+            font-size:35px;
+            font-style: italic;
+            font-family: "cambria";
+            color: black;
+            opacity: 0.6;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        div.img1 {
+            height: 200px;
+            margin-bottom:10%;
+            //position: relative;
+        }
+
+        div.img1 img {
+            width: 100%;
+            height: 100%;
+            //position: relative;
+        }
+
+        div.img1 .tooltip {
+          position: relative;
+          transform: translate(100%);
+          bottom: 25%;
+          left: 20%;
+          width:60% ;
+          font-style: italic;
+          max-width: none;
+          padding: 5px;
+          color: #f4511e;
+          font-size: 16px;
+          position: center;
+          text-align: center;
+          background: white;
+          transition: all 0.5s;
+          opacity:0;
+        }
+        div.img1:hover .tooltip {
+          position: absolute;
+          transform: translate(0);
+          opacity:1;
+        }
+        div.tooltip:hover ~ .this{
+          //width:100%;
+        }
+
+        .profile{
+          margin-top: -89px;
+        }
+
+        .img-responsive {
+    margin: 0 auto;
+}
+
+        #p2{
+          opacity: 0.8;
+        }
+
+
+  </style>>
+</head>
+<!-- navbar  section-->
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container" >
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#x1">ABOUT</a></li>
+        <li><a href="#x8">RESUME</a></li>
+        <li><a href="#x2">SKILLS</a></li>
+        <li><a href="#x3">EDUCATION</a></li>
+        <li><a href="#x4">INTERESTS</a></li>
+        <li><a href="#x5">PROJECTS</a></li>
+        <li><a href="#x6">TRAVEL</a></li>
+        <li><a href="#x7">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- cover section-->
+   <!-- Full Width Image Header with Logo -->
+    <!-- Image backgrounds are set within the full-width-pics.css file. -->
+   <header class="image-bg-fixed-height" style="height: 614.7px;">
+
+        <!--img class="img-responsive img-center" src="http://placehold.it/200x200&text=Logo" alt=""-->
+    </header>
+
+<!-- about section-->
+
+<div class="container polaroid" style="background-color:white;margin-top:150px;" id="x1">
+<div class="row">
+<div class="col-md-5"></div>
+<div class=" col-md-2 profile" >
+  <img src="profile5.jpg" class="img-responsive" alt="profile picture" style="border-radius: 20%;" width="190" height="200">
+</div>
+<div class="col-md-5"></div>
+</div>
+  <h2 id="p1">Rajat Tamoli</h2> 
+  <p id="info">B.Tech final year undergrad</br>
+  Computer Science and Engineering from</br>
+  Global Institute of Technology, Jaipur.</br></br>Web Development & Software Engineering,</br> Intern at NET PARAM TECHNOLOGIES PRIVATE LIMITED-CDAC</br>
+
+</p>
+  <p id="">Email <span class="  glyphicon glyphicon-envelope" ></span> - rajatyaduvanshi99@gmail.com</p> 
+  <p id="">Cell <span class="   glyphicon glyphicon-earphone  " ></span> - +918696958071</p>
+    <a href="rajat.pdf" target="_blank">
+      <button type="submit" class="btn btn-default polaroid" style="position:center">
+          <small><span class="glyphicon glyphicon-save"></span></small>&nbsp Dowload Resume</button></a>         
+</div>
+
+ <!-- Resume Section -->
+ <div class="container div1" " id="x8">
+  <p id="para2">
+            <form><b>Resume</b>&nbsp
+                <span class=" glyphicon glyphicon-paperclip"></span>
+            </form></p>
+</div>
+
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <object data="rajat.pdf" type="application/pdf" width="100%" height="500px">
+                      <p>Your web browser doesn't have a PDF plugin.
+                      Instead you can <a target="_blank" href="rajat.pdf">click here to
+                      download the Resume.</a></p>
+                    </object>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+<!-- Skill section-->
+
+<div class="container div1" id="x2" >
+  <p id="para2">
+            <form><b>Skills</b>&nbsp
+                <span class="glyphicon glyphicon-briefcase"></span>
+            </form></p>
+</div>
+
+<div class="container polaroid" style="background-color:#4c4a4a">
+        <table id="t01">
+          <tr>
+             <td>C </i></td>
+             <td>C++</i></td>
+             <td>data structures</i></td>
+          </tr>
+           <tr>
+             
+             <td>Angularjs</i></td>
+             <td >Php</i></td>
+             <td >Mysql</i></td>
+             
+          </tr>
+           <tr>
+            <td>html</i></td>
+            <td>bootstrap</i></td>
+             <td >javascript</i></td>
+          </tr>
+           <tr>
+             <td >CSS</i></td>
+             <td>Nodejs</i></td>
+             <td>Mongodb</i></td>
+             
+          </tr>
+        </table>
+</div>
+
+<!-- Education section-->
+<div class="container div1" id="x3" >
+  <p id="para2">
+            <form><b>Education</b>&nbsp
+                <span class="glyphicon glyphicon-education"></span>
+            </form></p>
+</div>
+
+<div class="container" >
+  <div class="row">
+    <div class="col-md-5 polaroid1" style="background-color:white">
+      <h3><b><small>2015-2019</small></b></h3>
+      <p id="p2"><b>Global Institute of Technology, Jaipur</b></p>
+      <p id="info2"><b><small>B.Tech (cse) </small></b></p>
+    </div>
+    <div class="col-md-2 div3">
+      <img src="mid.png">
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      
+    </div>
+    <div class="col-md-2 div3">
+      <img src="mid1.png">
+    </div> 
+    <div class="col-md-5 polaroid1" style="background-color:white">
+      <h3><b><small>2013-2015</small></b></h3>
+      <p id="p2"><b>RBSE ( Pratap Adarsh School)</b></p>
+      <p id="info2"><b><small>higher secondary school</small></b></p>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container div1" id="x4" >
+  <p id="para2">
+            <form><b>Interests</b>&nbsp
+                <span class="glyphicon glyphicon-headphones"></span>
+            </form></p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="dance.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%"> 
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="music.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">   
+        
+      </div> 
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="eat.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">    
+        
+      </div> 
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="t.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">    
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="m.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">    
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="c.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">    
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="photo.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">    
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="web.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">    
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container" id="x5">
+  <p id="para2"><b>Projects</b> &#10002;</p>
+</div>
+
+<div class="container" >
+  <div class="row">
+    <div class="col-md-5 polaroid1" style="background-color:white">
+      <p id="p2"><b>To-Do List Application</b></p>
+      <p id="info1"><small>A basic task management app to manage your</small></p>
+      <p id="info1"><small>daily tasks efficiently, programmed in Angularjs,</small></p>
+      <p id="info1"><small>have features to add,remove tasks and log-in your acoounts to secure data.</small></p>
+    </div>
+    <div class="col-md-2 div3">
+      <img src="mid.png">
+    </div> 
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      
+    </div>
+    <div class="col-md-2 div3">
+      <img src="mid.png">
+    </div> 
+    <div class="col-md-5 polaroid1" style="background-color:white">
+      <p id="p2"><b>Student Result Management System</b></p>
+      <p id="info1"><small>A student cheking result and , </small></p>
+      <p id="info1"><small>admin add/delete student data and result information</small></p>
+      <p id="info1"><small>using html,css,php and mysql database</small></p>
+    </div>
+    
+  </div>
+  <div class="row">
+    <div class="col-md-5 polaroid1" style="background-color:white">
+      <p id="p2"><b>Personal Website</b></p>
+      <p id="info1"><small>Developed using html, css, javascript and</small></p>
+      <p id="info1"><small>bootstrap, contains link to projects, resume </small></p>
+      <p id="info1"><small>and contact information.</small></p>
+    </div>
+    <div class="col-md-2 div3">
+      <img src="mid.png">
+    </div> 
+  </div>
+
+  
+</div>
+
+<div class="container" id="x6">
+  <p id="para2"><b>Travel</b> <u>&#9951;</u></p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="http://www.nativeplanet.com/photos/big/2012/08/_13463093110.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">
+          <div class="tooltip">
+            Albert Hall, Jaipur
+          </div> 
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="http://www.techtravel.ch/u_voyages/0491_image2.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">
+          <div class="tooltip">
+            Taj Mahal, Agra
+          </div>   
+        
+      </div> 
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="kota.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%"> 
+          <div class="tooltip">
+            seven wonders ,kota
+          </div>   
+        
+      </div> 
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="http://www.siliconindia.com/travelcity/travel_images/Z1WAtCav.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">
+          <div class="tooltip">
+            Bhangarh, Rajasthan
+          </div>    
+        
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="mata.jpg" alt="Pulpit Rock" style="width:100%">
+          <div class="tooltip">
+            keladevi, karauli
+          </div>    
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="aamer.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%"> 
+          <div class="tooltip">
+            Aamer fort, Jaipur
+          </div>   
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="jal.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%"> 
+          <div class="tooltip">
+            jal-mahal, Jaipur
+          </div>   
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="prem.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%"> 
+
+          <div class="tooltip">
+            Prem-mandir, Vrindavan
+          </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="Maa Vaishno Devi Temple.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%"> 
+          <div class="tooltip">
+            Maa Vaishno Devi Temple, Mathura
+          </div>   
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="prvat.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">
+          <div class="tooltip">
+          Gowardhan parwat </div>
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="sikar.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%">
+          <div class="tooltip">
+            Khatu-shyam, Sikar
+          </div>    
+        
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="img1 polaroid">
+        
+          <img src="agra.jpg" alt="Trolltunga Norway" alt="Pulpit Rock" style="width:100%"> 
+
+          <div class="tooltip">
+            Red Fort, Agra
+          </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="container" id="x7" style="margin-top:-20px">
+  <p id="para2"><b>Contact</b> &#9993;</p>
+</div>
+
+<div class="container polaroid2" style="background-color:white;margin-bottom:20px;">
+  <div class="row">
+    <div class="col-md-3">
+    <a href="https://github.com/rajatyy/rajat" target="_blank">
+      <img src="git.png">
+    </a>
+    </div>
+    <div class="col-md-2">
+    <a href="https://www.linkedin.com/in/rajat-tamoli-41923a12b/" target="_blank">
+      <img src="ln.png">
+    </a>
+    </div>
+    <div class="col-md-2">
+    <a href="https://plus.google.com/u/0/104077391605631789020" target="_blank">
+      <img src="google.png">
+     </a> 
+    </div>
+    <div class="col-md-2">
+    <a href="https://m.facebook.com/profile.php?ref_component=mbasic_home_header&ref_page=MMessagingEntBasedReadController&refid=12#_=_" target="_blank">
+      <img src="fb.png">
+    </a>
+    </div>
+    <div class="col-md-3">
+    <a href="https://secure.skype.com" target="_blank">
+      <img src="skype1.png">
+    </a>
+    </div>
+    
+  </div>
+</div>
+
+</body>
+</html>
