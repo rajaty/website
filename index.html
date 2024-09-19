@@ -261,6 +261,24 @@
           opacity: 0.8;
         }
 
+#navbar-brand {
+    display: inline-block;
+    padding: 10px 20px; /* Add padding to make it look like a button */
+    background-color: transparent; /* Default background */
+    color: #ffffff; /* Default text color */
+    border: 2px solid transparent; /* Default border */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+}
+
+#navbar-brand:hover {
+    background-color: rgba(0, 128, 0, 0.8); /* Green background on hover */
+    color: #ffffff; /* Text color on hover */
+    border-color: rgba(0, 128, 0, 1); /* Green border on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+	
 
   </style>>
 </head>
@@ -268,14 +286,14 @@
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container" >
-    <div class="navbar-header" >
+  <div class="container">
+    <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"></a>
+<a class="navbar-brand" href="javascript:location.reload();" id="navbar-brand">Rajat Tamoli</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -291,6 +309,20 @@
     </div>
   </div>
 </nav>
+
+<!-- Additional JavaScript for closing navbar on link click -->
+<script>
+  // Close the navbar when a link is clicked in mobile mode
+  document.querySelectorAll('.nav a').forEach(anchor => {
+    anchor.addEventListener('click', function() {
+      const navbar = document.getElementById('myNavbar');
+      if (navbar.classList.contains('in')) {
+        navbar.classList.remove('in'); // Collapse the navbar
+      }
+    });
+  });
+</script>
+
 <!-- cover section-->
    <!-- Full Width Image Header with Logo -->
     <!-- Image backgrounds are set within the full-width-pics.css file. -->
@@ -300,27 +332,55 @@
     </header>
 
 <!-- about section-->
+<div class="container polaroid" style="background: linear-gradient(to bottom right, #f8f9fa, #e9ecef); margin-top: 150px; border-radius: 15px; padding: 20px;" id="x1">
+  <div class="row">
+    <div class="col-md-5"></div>
+    <div class="col-md-2 profile">
+      <img src="profile5.jpg" class="img-responsive" alt="profile picture" style="border-radius: 15%;" width="200" height="200">
+    </div>
+    <div class="col-md-5"></div>
+  </div>
+  <h2 id="p1" style="text-align: center;">Tamoli, Rajat | DevOps Observability Engineer at 8x8</h2>
+  <p id="info" style="text-align: center; margin: 10px 0;">
+    DevOps Observability Engineer at 8x8 <br>
+    B.Tech 2019 Passout in Computer Science and Engineering from <br>
+    Global Institute of Technology, Jaipur (RTU, Kota) <br>
+  </p>
+  <p style="text-align: center;">
+    Email <span class="glyphicon glyphicon-envelope"></span> - <a href="mailto:rajatyaduvanshi99@gmail.com">rajatyaduvanshi99@gmail.com</a>
+  </p>
+  <a href="rajat.pdf" target="_blank">
+    <button type="button" class="btn btn-primary" style="display: block; margin: 0 auto; border-radius: 5px; padding: 10px 20px; transition: background-color 0.3s;">
+      <small><span class="glyphicon glyphicon-save"></span></small>&nbsp; Download Resume
+    </button>
+  </a>
+</div>
 
-<div class="container polaroid" style="background-color:white;margin-top:150px;" id="x1">
-<div class="row">
-<div class="col-md-5"></div>
-<div class=" col-md-2 profile" >
-  <img src="profile5.jpg" class="img-responsive" alt="profile picture" style="border-radius: 15%;" width="200" height="200">
-</div>
-<div class="col-md-5"></div>
-</div>
-  <h2 id="p1">Tamoli, Rajat | Observability Engineer At 8x8 India Pvt Ltd </h2>
-  <p id="info">Observability Engineer At  8x8 India Pvt Ltd. </br>
-  B.Tech 2019 Passout Computer Science and Engineering from</br>
-  Global Institute of Technology, Jaipur</br>
+<!-- Additional CSS for enhancements -->
+<style>
+  .polaroid {
+    background-color: white; /* Maintains the original background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    padding: 20px; /* Added padding for better spacing */
+  }
 
-</p>
-  <p id="">Email <span class="  glyphicon glyphicon-envelope" ></span> - rajatyaduvanshi99@gmail.com</p> 
- <!-- <p id="">Cell  <span class="   glyphicon glyphicon-earphone  " ></span> - +91</p> -->
-    <a href="rajat.pdf" target="_blank">
-      <button type="submit" class="btn btn-default polaroid" style="position:center">
-          <small><span class="glyphicon glyphicon-save"></span></small>&nbsp Dowload Resume</button></a>         
-</div>
+  .polaroid:hover {
+    transform: scale(1.02);
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn-primary:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+</style>
 
  <!-- Resume Section -->
  <div class="container div1" " id="x8">
@@ -357,9 +417,9 @@
         <table id="t01">
           </tr>
              <tr>
-              <td >Maven</i></td>
+              <td>Linux</i></td>
              <td>Docker & K8S</i></td>
-             <td>Nginx</i></td>
+             <td>Jenkins</i></td>
           </tr><!--
              <tr>
              <td>Devops</i></td>
@@ -367,7 +427,7 @@
              <td>Kafka</i></td>
           </tr>    -->  
              <tr>
-             <td>Helm and Robin</i></td>
+             <td>Helm</i></td>
              <td>Microservices</i></td>
              <td>Linux - Shell</i></td>
           </tr> <!--
@@ -377,24 +437,24 @@
              <td>SonarQube</i></td>
           </tr>           -->
           <tr>
-             <td>Telco Cloud Automation</i></td>
-             <td>C,C++</i></td>
+             <td>Spring-Framework</i></td>
+             <td>Python</i></td>
              <td>Java</i></td>
           </tr>
            <tr>
-              <td>AWS (EC2,S3,CI/CD)</i></td>
-              <td>Harbor</i></td>
+              <td>AWS</i></td>
+              <td>Terraform</i></td>
               <td>HTML-CSS</i></td>
           </tr>
            <tr>
            
-             <td>Bootstrap</i></td>
+             <td>Ansible</i></td>
              <td>ELK Stack,Prom,Grafana</i></td>
              <td>Kafka</i></td>
           </tr>
          <tr>
              <td>GIThub</i></td>
-             <td>Spring-Framework</i></td>
+             <td>Databases</i></td>
              <td>JIRA</i></td>
           </tr>
         </table>
@@ -403,13 +463,30 @@
 <!-- Education section-->
 <div class="container div1" id="x3" >
   <p id="para2">
-            <form><b>Education</b>&nbsp
+            <form><b>Education and Experience</b>&nbsp
                 <span class="glyphicon glyphicon-education"></span>
             </form></p>
 </div>
 
 <div class="container" >
   <div class="row">
+	  
+	  <!---  class for education  -->
+	  
+	    <div class="row">
+    <div class="col-md-5 polaroid1" style="background-color:white">
+      <h3><b><small>Dec-2023-Present</small></b></h3>
+      <p id="p2"><b>Executive Post Graduate Certification in Cloud
+Computing by iHUB DivyaSampark, IIT Roorkee</b></p>
+    </div></br>
+    <div class="col-md-2 div3">
+      <img src="mid.png">
+    </div> 
+  </div>
+  
+  	  <!---  class for education  -->
+
+	  
     <div class="col-md-5">
       
     </div>
@@ -418,8 +495,8 @@
     </div> 
     <div class="col-md-5 polaroid1" style="background-color:white">
       <h3><b><small>2023-Present</small></b></h3>
-      <p id="p2"><b>Observability Engineer at 8x8 India Pvt Ltd.</b></p>
-      <p id="info2"><b><small>Bengaluru, Karnataka</br></small></b></p>
+      <p id="p2"><b>Devops Observability Engineer at 8x8</b></p>
+      <p id="info2"><b><small>[Remote]Bengaluru, Karnataka</br></small></b></p>
     </div></br>
 
   <div class="row">
@@ -444,6 +521,7 @@
       <h3><b><small>2019-2020</small></b></h3>
       <p id="p2"><b>Full-Stack-Developer At Jspiders Training Institute</b></p>
       <p id="info2"><b><small>Hyderabad, Telangana</br></small></b></p>
+      <p id="info2"><b><small>Internship and training</br></small></b></p>
     </div></br>
   <div class="row">
     <div class="col-md-5 polaroid1" style="background-color:white">
@@ -575,14 +653,30 @@
     
   </div>
 </div>
-
+<style>
+  /* Existing styles */
+  
+  #info1 {
+      line-height: 1.5; /* Adjust line height */
+      margin: 0; /* Remove default margin */
+  }
+</style>
 <!-- Projects section-->
 <div class="container" id="x5">
   <p id="para2"><b>Projects</b> &#10002;</p>
 </div>
 
 <div class="container" >
-<!--
+    <div class="row">
+    <div class="col-md-5 polaroid1" style="background-color:white">
+      <p id="p2"><b>End-to-End Monitoring Solutions Using the Grafana Stack for Enhanced Observability in DevOps</b></p>
+      <p id="info1"><small>Deployed, migrate, dashboard-alert creation and managed observability tools, automated everything by CI/CD pipelines and Terraform-Ansible, and migrated teams to a unified monitoring platform.</small></p>
+
+    </div>
+    <div class="col-md-2 div3">
+      <img src="mid.png">
+    </div> 
+  </div>
 <div class="row">
     <div class="col-md-5">
       
@@ -592,18 +686,18 @@
     </div> 
     
     <div class="col-md-5 polaroid1" style="background-color:white">
-      <p id="p2"><b>Observatory Framework</b></p>
-      <p id="info1"><small>An Observatory Framework there Analyze, Process,</small></p>
-      <p id="info1"><small>Monitor, Visualize, Alerting,Tracing Data Using</small></p>
-      <p id="info1"><small>ELK,Prometheus,Grafana,Jaeger etc on Cloud</small></p>
-       <p id="info1"><small>Plateform.</small></p></p>
+      <p id="p2"><b>4G/5g Telecome Observatory Framework</b></p>
+      <p id="info1"><small>Deployed containerized microservices, integrated real-time monitoring, and managed AWS infrastructure.
+Also using observability to collect telemetry data from all network
+functions for optimize the DISH and Rakuten 5G network.</small></p>
+
     </div>
     </br>
   </div>
     <div class="row">
     <div class="col-md-5 polaroid1" style="background-color:white">
       <p id="p2"><b>Apache Spark</b></p>
-      <p id="info1"><small>Worked on Apache Spark for Large-scale data</small></p>
+      <p id="info1"><small>Worked on Apache Spark for Process Large-scale data</small></p>
       <p id="info1"><small>Processing on Cloud Server Using Deploy</small></p>
       <p id="info1"><small>Spark Jobs with Swagger API.</small></p>
       
@@ -630,7 +724,7 @@
     </div>
     </br>
   </div>
-  -->
+  
   <div class="row">
     <div class="col-md-5 polaroid1" style="background-color:white">
       <p id="p2"><b>Personal Website</b></p>
@@ -882,41 +976,57 @@
 
 
 <!-- Contact section-->
+<style>
+.social-icon {
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Scale effect on hover */
+    filter: brightness(1.1); /* Slightly brightens the image on hover */
+}
+
+</style>
 <div class="container" id="x7" style="margin-top:-20px">
   <p id="para2"><b>Contact</b> &#9993;</p>
 </div>
 
-<div class="container polaroid2" style="background-color:white;margin-bottom:20px;">
-  <div class="row">
+<div class="container polaroid2" style="background-color:white; margin-bottom:20px; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+  <div class="row text-center">
     <div class="col-md-3">
-    <a href="https://github.com/rajaty" target="_blank">
-      <img src="git.png">
-    </a>
+      <a href="https://github.com/rajaty" target="_blank" class="social-icon">
+        <img src="git.png" alt="GitHub">
+      </a>
     </div>
     <div class="col-md-2">
-    <a href="https://www.linkedin.com/in/rajat-tamoli-50599a2a3/" target="_blank">
-      <img src="ln.png">
-    </a>
+      <a href="https://www.linkedin.com/in/rajat-tamoli-50599a2a3/" target="_blank" class="social-icon">
+        <img src="ln.png" alt="LinkedIn">
+      </a>
     </div>
     <div class="col-md-2">
-    <a href="https://plus.google.com/u/0/104077391605631789020" target="_blank">
-      <img src="google.png">
-     </a> 
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRmVGdCJVjBvQknXbGdJRDmbtrqQMBzCbzdLgJNjFSJHjSlRbtfWHMgVrXlkWSwmsMJgXCv" target="_blank" class="social-icon">
+        <img src="google.png" alt="Email">
+      </a>
     </div>
     <div class="col-md-2">
-    <a href="https://m.facebook.com/profile.php?id=100006714885008&pn_ref=ec_friends_card" target="_blank">
-      <img src="fb.png">
-    </a>
+      <a href="https://m.facebook.com/profile.php?id=100006714885008&pn_ref=ec_friends_card" target="_blank" class="social-icon">
+        <img src="fb.png" alt="Facebook">
+      </a>
     </div>
     <div class="col-md-3">
-    <a href="tel:contact number"><img style="height: 41px;width: 40px;" src="phone.png" /></a>
-
-    </a>
+      <a href="tel:contact number" class="social-icon">
+        <img src="phone.png" alt="Phone" style="height: 41px; width: 40px;">
+      </a>
     </div>
-
-    
   </div>
 </div>
+
 
 </body>
 </html>
